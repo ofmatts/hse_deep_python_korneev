@@ -56,7 +56,7 @@ def test_model_ignores_case():
 
 
 def test_model_empty_message():
-    # пустому сообщению модель не доверяет 
+    # пустому сообщению модель не доверяет
     assert SomeModel().predict("") == 0.0
 
 
