@@ -1,0 +1,10 @@
+[MESSAGES CONTROL]
+# отключаю то что реально мешает жить, остальное стараюсь чинить
+disable=
+    missing-module-docstring,
+    missing-class-docstring,
+    missing-function-docstring,
+    too-few-public-methods,
+    redefined-outer-name,
+    # в тестах list(...) == [] читается лучше чем not list(...)
+    use-implicit-booleaness-not-comparison,

@@ -1,0 +1,28 @@
+name: homework
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: ставлю зависимости
+        run: pip install -r requirements.txt
+
+      - name: flake8
+        run: flake8 01
+
+      - name: pylint
+        run: pylint 01
+
+      - name: тесты и покрытие
+        run: pytest 01 --cov=01 --cov-report=term-missing --cov-fail-under=90

@@ -1,0 +1,4 @@
+[flake8]
+# 79 мало, русские комментарии в строку не влезают
+max-line-length = 100
+exclude = .git,__pycache__,.venv
