@@ -1,0 +1,2 @@
+# hse_deep_python_korneev
+cloned from hse_deep_python_autumn_2026
