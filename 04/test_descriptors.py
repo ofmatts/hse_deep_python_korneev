@@ -73,8 +73,8 @@ def test_get_from_class_returns_descriptor():
 
 def test_cant_create_descriptor_without_validate():
     # класс без validate не создастся - абстрактный метод!
-    class Bad(BaseDescriptor):  # pylint: disable=unused-variable
-        pass  # validate не реализовал
+    class Bad(BaseDescriptor):  # pylint: disable=unused-variable,abstract-method
+        pass  # validate специально не реализован, именно это проверяю
 
     with pytest.raises(TypeError):
         Bad()  # pylint: disable=abstract-class-instantiated
