@@ -1,0 +1,6 @@
+# примеры для ручной проверки
+https://example.com
+https://www.python.org
+https://docs.aiohttp.org
+https://httpbin.org/status/404
+https://httpbin.org/delay/2
